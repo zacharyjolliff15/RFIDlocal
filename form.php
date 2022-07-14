@@ -15,10 +15,10 @@
 	if(isset($_POST['submit']))
 	{
 		// Store the Product name in a "name" variable
-		$name = mysqli_real_escape_string($con,$_POST['Product_name']);
+		$name = mysqli_real_escape_string($con,$_POST['rfidBox']);
 		
 		// Store the Category ID in a "id" variable
-		$id = mysqli_real_escape_string($con,$_POST['Category']);
+		$id = mysqli_real_escape_string($con,$_POST['teacherListBox']);
 		
 		// Creating an insert query using SQL syntax and
 		// storing it in a variable.
@@ -47,12 +47,12 @@
 		content="width=device-width, initial-scale=1.0">	
 </head>
 <body>
-	<form method="POST">
+	<form method="POST"> <!--Appends form data into url in name/value pairs -->
         <h1>Add Teacher Card to Database</h1>
 		<label>Teacher's RFID number</label>
-		<input type="text" name="Product_name" required><br>
-		<label>Select a Teacher from KALPA Database</label>
-		<select name="Category">
+		<input type="text" name="rfidBox"><br>
+		<label>Select a Teacher</label>
+		<select name="teacherListBox">
 			<?php
 				// use a while loop to fetch data
 				// from the $all_categories variable
@@ -78,9 +78,7 @@
         <br>
         <br>
         <br>
-
-        <h1>Remove Teacher Card to Database</h1>
 	</form>
-	<br>
+    
 </body>
 </html>
