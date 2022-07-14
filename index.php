@@ -70,7 +70,7 @@ if(isset($_REQUEST['login_btn'])){
 </head>
 
 <body>  
-	<div class="container">
+	<div class="container"> <!-- Bootstrap-->
 		<?php
 			if( isset($_REQUEST['msg'])){
 				echo "<p class='alert alert-warning'>".$_REQUEST['msg']."</p>";
