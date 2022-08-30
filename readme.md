@@ -18,3 +18,9 @@ Working on: Ability to remove teacher card #
 Ability to have drop down table of RFID number
 
 git push -u origin day1
+
+# Day 2 Changes
+
+Goals:
+Create replica of Kalpa user information page
+Status: Complete
